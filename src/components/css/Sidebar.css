@@ -1,0 +1,132 @@
+.sidebar {
+  background-color:  #141617;
+  flex: 0.2;
+  border-right: 1px solid var(--twitter-background);
+  margin-top: 10px;
+  margin-left: 10px;
+  min-width: 250px;
+  margin-right: 10px;
+}
+
+.sidebar__tweet {
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+}
+.sidebar__logout{
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+}
+.sidebar__twitterIcon {
+  color: var(--twitter-color);
+  font-size: 30px !important;
+  margin-left: 28px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal__content {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #000000;
+  /* Change the background color as desired */
+  padding: 100px;
+  border-radius: 5px;
+}
+
+/* Modal content */
+.modal {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: relative;
+  top: -330px;  
+  color: #333;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.close-button:hover {
+  background-color: #ddd;
+}
+
+.modal__form {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for labels */
+.modal__form label {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+}
+
+/* Style for input elements */
+.modal__form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.modal__form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: teal;
+  /* Twitter blue */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.modal__form button:hover {
+  background-color: #0d86d0;
+  /* Darker blue on hover */
+}
